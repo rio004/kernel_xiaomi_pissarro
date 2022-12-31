@@ -66,6 +66,8 @@ endif
     # Do build-in for rest of connectivity drivers
     obj-y += bt/mt66xx/connac2/
     obj-y += fmradio/
+    export CFG_BUILD_CONNAC2=true
+    export CFG_FM_CHIP=mt6635
     obj-y += gps/
 
 # Otherwise we were called directly from the command line;
